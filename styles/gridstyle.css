@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease 0.95s; 
+}
+body{
+    margin: 0 60px;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+ul a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+}
+header h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#img2{
+    display: none;
+}
+body hr{
+    display: none;
+}
+.contenedores{
+    max-width: 1202px;
+    max-height: 2900px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(278px, 278px));
+    grid-template-rows: repeat(auto-fit, minmax(330px, 330px));
+    padding-top: 40px;
+}
+.contenedores > div{
+    display: block;
+    background-color: #505050;
+    border-radius: 7px;
+    padding-left: 11px;
+    padding-top: 250px;
+}
+.datoscard{
+    position: relative;
+    height: 73px;
+    width: 256px;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+}
+.izq{
+    position: absolute;
+    text-align:left;
+    left: 5px;
+    top: 25px;
+}
+.der{
+    position: absolute;
+    text-align:end ;
+    left: 220px;
+    top: 25px;
+}
+@media (max-width:390px){
+    body{
+        margin: 0 24px;
+    }
+    header ul{
+        display: none;
+    }
+    #img2{
+        display: block;
+    }
+    #img1{
+        display: none;
+    }
+    body hr{
+        display: block;
+    }
+    .contenedores{
+        justify-content: center;
+    }
+}
